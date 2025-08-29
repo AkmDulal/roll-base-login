@@ -107,6 +107,5 @@ The application demonstrates **mock role-based authentication** (no backend). Us
 ### Installation
 ```bash
 # Install dependencies
-npm install react-router-dom @reduxjs/toolkit react-redux
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+npm install or yarn 
+npm run dev or yarn dev
