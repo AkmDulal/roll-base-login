@@ -14,12 +14,9 @@ export default function App() {
       <TopNav />
       <div className="mx-auto max-w-7xl p-4">
         <Routes>
-          {/* Logins */}
           <Route path="/login/admin" element={<AdminLogin />} />
           <Route path="/login/merchant" element={<MerchantLogin />} />
           <Route path="/login/member" element={<MemberLogin />} />
-
-          {/* Dashboards (protected by role) */}
           <Route
             path="/dashboard/admin"
             element={
@@ -44,8 +41,6 @@ export default function App() {
               </ProtectedRoute>
             }
           />
-
-          {/* default */}
           <Route path="/" element={<Navigate to="/login/admin" replace />} />
           <Route path="*" element={<div className="p-6">Not Found</div>} />
         </Routes>

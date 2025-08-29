@@ -108,26 +108,6 @@ export default function MemberDashboard() {
   return (
     <div className="space-y-6">
       <h1 className="h1">Member Dashboard</h1>
-
-      {/* <div className="card">
-        <h2 className="h2 mb-3">Points Summary</h2>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-xl border p-4 text-center">
-            <div className="text-sm text-gray-500">Total</div>
-            <div className="text-3xl font-bold">{memberPoints.total}</div>
-          </div>
-          <div className="rounded-xl border p-4 text-center">
-            <div className="text-sm text-gray-500">This Month</div>
-            <div className="text-3xl font-bold">{memberPoints.monthly}</div>
-          </div>
-          <div className="rounded-xl border p-4 text-center">
-            <div className="text-sm text-gray-500">Tier</div>
-            <div className="text-3xl font-bold">{memberPoints.tier}</div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Charts */}
       <div className="card">
         <h2 className="h2 mb-3">Points Summary</h2>
         <div className="grid gap-6 sm:grid-cols-3">
@@ -142,7 +122,6 @@ export default function MemberDashboard() {
           </div>
 
           <div className="flex flex-col items-center">
-            {/* Tier ring — always full, just uses tier color */}
             <ReactApexChart options={tierOptions} series={[100]} type="radialBar" height={260} />
             <div className="mt-2 text-sm text-gray-500">Current Tier</div>
           </div>
